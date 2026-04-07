@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import Navbar from "./components/Navbar";
 
@@ -11,7 +11,7 @@ import Billing from "./pages/Billing";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="flex">
         
         <Sidebar />
@@ -32,7 +32,7 @@ function App() {
         </div>
 
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
